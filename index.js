@@ -7,6 +7,13 @@ function append(key){
 function cl(){
     el.value=" ";
 }
+
+function back(){
+    var str = el.value;
+    var len = str.length;
+    el.value=str.substring(0,len-1);
+}
+
 function eq(){
     try{
     el.value=eval(el.value);
